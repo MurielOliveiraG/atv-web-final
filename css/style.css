@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --cor-primaria: #F8CAC1;
+    --cor-secundario: #EC6246;
+}
+
+header{
+    height: 100px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-logo img{
+   height: 50px;
+   margin: 25px;
+   
+
+}
+
+.header-nav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: var(--cor-secundario);
+}
+
+.header-menu ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 20px;
+    
+
+    
+}
+
+.header-menu li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+
+
+
+main figure{
+    width: 100%;
+    margin: 0;
+    
+}
+
+.banner-main img{
+    width: 100%;
+    height: auto;
+    width: 50%;
+
+}
+
+section{
+    background-color: var(--cor-secundario);
+}
+
+.secao-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 10px;
+    border: 0px;
+    border-radius: 30px;
+    background-color: var(--cor-primaria);
+}
+
+.card h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: var(--cor-secundario);
+    font-size: 25px;
+    
+}
+
+.card p{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.card img{
+    padding: 20px;
+}
+
+.titulo-cards h2{
+    font-family: 'Chewy';
+    font-size: 60px;
+    padding: 30px;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundario);
+    border: 0px;
+    border-radius: 30px;
+    width: 300px;
+    height: 70px;
+    font-size: 18px;
+    margin-top: 30px;
+    
+}
+
+.cards-sec{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}

@@ -1,14 +1,128 @@
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lilita+One&family=Mohave&family=Montserrat:wght@300&family=Rowdies&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans:wght@300&family=Lilita+One&family=Mohave&family=Montserrat:wght@300&family=Rowdies&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chewy&family=Josefin+Sans:wght@300&family=Lilita+One&family=Mohave&family=Montserrat:wght@300&family=Rowdies&display=swap');
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Lanches</title>
+    <title>Bite Blitz</title>
 </head>
+
 <body>
-    <div id="lanches"></div>
-    <button onclick="getLanches();">listar lanches</button>
-    <script src="/js/IndexJs.js"></script>
+    <header>
+        <div class="header-logo">
+            <figure>
+                <img src="/img/rápido e saboroso.png" alt="Logo BiteBlitz">
+            </figure>
+        </div>
+        <div class="header-nav">
+            <nav class="header-menu">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Lanches</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/banner biteblitz (1).png" class="d-block w-100" alt="Banner Donuts">
+                </div>
+            </div>
+    </main>
+
+    <section class="cards-sec">
+        <div class="titulo-cards">
+            <h2>Mais Pedidos</h2>
+        </div>
+        <div class="secao-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/png-transparent-hamburger-cheeseburger-wendy-s-burger-king-food-burger-top-removebg-preview.png"
+                    class="card-img-top" alt="Imagem de Hamburguer Duplo">
+                <div class="card-body">
+                    <h5>Duplo Hambúrguer</h5>
+                    <p class="card-text">Dois hambúrgueres suculentos, uma explosão de sabor. Queijo derretido, alface
+                        crocante e um toque especial. Saboreie o dobro da delícia!</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/img/png-clipart-burger-and-sandwich-burger-and-sandwich-removebg-preview.png"
+                    class="card-img-top" alt="Imagem de Sanduíche">
+                <div class="card-body">
+                    <h5>Sanduíche Natural</h5>
+                    <p class="card-text">Nosso Sanduíche Natural combina peito de peru, alface fresca, tomate e cream
+                        cheese, tudo envolto em pão integral macio. Perfeito para uma refeição rápida e saudável.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/img/45eb98c8637d591a1bde451eb1bce941.png" class="card-img-top" alt="Imagem de Pizza">
+                <div class="card-body">
+                    <h5>Pizza Marguerita</h5>
+                    <p class="card-text">Autêntica e deliciosa! Massa fina, molho de tomate, mussarela e manjericão.
+                        Simples e irresistível.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="secao-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/brownie-8.png" class="card-img-top" alt="Imagem de Brownie">
+                <div class="card-body">
+                    <h5>Brownie</h5>
+                    <p class="card-text">Deliciosamente macio por dentro, levemente caramelizado por fora. Pedaços
+                        suculentos de chocolate em cada mordida. Puro prazer em um brownie.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/img/15308_torta_holandesa.png" class="card-img-top" alt="Imagem de Torta Holandesa">
+                <div class="card-body">
+                    <h5>Torta Holandesa</h5>
+                    <p class="card-text">Camadas perfeitas de biscoito crocante, recheio cremoso de chocolate e
+                        cobertura de creme holandês. Pura tentação em cada pedaço!</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="/img/donut-31-1024x659.png" class="card-img-top" alt="Imagem de Donuts">
+                <div class="card-body">
+                    <h5>Donuts</h5>
+                    <p class="card-text">Anéis fofos de felicidade. Coberturas irresistíveis, sabores inesquecíveis. Uma
+                        mordida, um sorriso.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lanches"></div>
+        <button onclick="getLanches();">listar lanches</button>
+        <script src="/js/IndexJs.js"></script>
+
+    </section>
+
 </body>
+
 </html>
