@@ -133,6 +133,7 @@ h2{
 }
 
 .cards-sec{
+    background-color: #EC6246;
     text-align: center;
     padding: 30px;
     margin-bottom: 20px;
@@ -206,3 +207,6 @@ footer p{
     gap: 25px;
 }
 
+svg{
+    background-color: #EC6246;
+}
