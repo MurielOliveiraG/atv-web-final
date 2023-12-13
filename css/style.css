@@ -68,6 +68,7 @@ main figure{
 section{
     background: var(--cor-secundario);
     align-items: center;
+    
    
 }
 
@@ -82,7 +83,7 @@ section{
     margin: 10px;
     border: 0px;
     border-radius: 30px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundario);
 }
 
 .card h5{
@@ -90,13 +91,14 @@ section{
     font-weight: bold;
     text-align: center;
     padding: 10px;
-    color: var(--cor-secundario);
+    color: var(--cor-primaria);
     font-size: 25px;
     
 }
 
 .card p{
     font-family: 'Montserrat', sans-serif; 
+    color: var(--cor-primaria);
     font-weight: 600;
     text-align: center;
 }
@@ -108,9 +110,8 @@ section{
 .titulo-cards h2{
     font-family: 'Chewy';
     font-size: 60px;
-    padding: 30px;
     text-align: center;
-    color: var(--cor-primaria);
+    color: var(--cor-secundario);
 }
 
 button{
@@ -133,9 +134,8 @@ h2{
 }
 
 .cards-sec{
-    background-color: #EC6246;
+    background-color: var(--cor-primaria);
     text-align: center;
-    padding: 30px;
     margin-bottom: 20px;
 }
 
@@ -168,7 +168,7 @@ h2{
 
 footer{
     background-color: var(--cor-primaria);
-    margin-top: -20px;
+    margin-top: -60px;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -209,4 +209,6 @@ footer p{
 
 svg{
     background-color: #EC6246;
+    margin-top: -20px;
+
 }
