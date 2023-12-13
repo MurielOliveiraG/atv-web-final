@@ -1,0 +1,36 @@
+    {% extends "templates/base.peb" %}
+    {% block content %}
+        {% if resultado != null %}
+        {{resultado.getMsg}}
+        {% endif %}
+<h1>Realizar Pedidos</h1>
+ <form method="post" action="/addPedido">
+
+    <label for="lanche">Selecione seu lanche:</label>
+    <select name="lanche" id="lanche" value="{{idLanche}}">
+    {% for lanche in lanches %}
+            <option value="{{lanche.id}}"
+            {% if lanche.id == idLanche %}
+            selected
+            {% endif %}
+            >{{lanche.nome}}</option>
+        {% endfor %}
+    </select>
+
+    <label for="bebida">Selecione sua bebida:</label>  
+    <select name="bebida" id="bebida" value="{{idBebida}}">  
+        {% for bebida in bebidas %}
+            <option value="{{bebida.id}}"
+            {% if bebida.id == idBebida %}
+            selected
+            {% endif %}
+            >{{bebida.nome}}</option>
+        {% endfor %}
+    </select>
+
+    <label for="observacao">Descrição:</label>
+    <input type="text" id="observacao" name="observacao" value="{{observacao}}"/>
+    <input type="submit" />
+</form>
+ <button><a href="/">Voltar</a></button>
+{% endblock %}

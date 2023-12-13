@@ -1,0 +1,12 @@
+{% extends "templates/base.peb" %}
+
+{% block content %}
+<h1>Cadastrar lanches e bebidas</h1>
+<a href="/addLanche">Cadastrar novo lanche</a>
+<a href="/listLanche">Listar lanches cadastrados</a>
+<a href="/addBebida">Cadastrar nova bebida</a>
+<a href="/listBebida">Listar bebidas cadastradas</a>
+<h1>Realizar Pedidos</h1>
+<a href="/addPedido">Novo pedido</a>
+<a href="/listPedido">Lista de Pedidos</a>
+{% endblock %}
