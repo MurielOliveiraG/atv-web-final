@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,22 +6,19 @@
     --cor-secundario: #EC6246;
 }
 
-header{
+header {
     height: 100px;
     background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-between;
 }
 
-
-.header-logo img{
-   height: 50px;
-   margin: 25px;
-   
-
+.header-logo img {
+    height: 50px;
+    margin: 25px;
 }
 
-.header-nav{
+.header-nav {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -29,51 +26,40 @@ header{
     padding: 40px;
 }
 
-.header-menu a{
+.header-menu a {
     text-decoration: none;
     color: var(--cor-secundario);
 }
 
-.header-menu ul{
+.header-menu ul {
     display: flex;
     gap: 50px;
     list-style: none;
     padding: 20px;
-    
-
-    
 }
 
-.header-menu li{
+.header-menu li {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
-
-
-main figure{
+main figure {
     width: 100%;
     margin: 0;
-    
 }
 
-.banner-main img{
+.banner-main img {
     width: 100%;
     height: auto;
     width: 50%;
-
 }
 
-section{
+section {
     background: var(--cor-secundario);
     align-items: center;
-    
-    
-   
 }
 
-.secao-cards{
+.secao-cards {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -81,53 +67,50 @@ section{
     margin-bottom: 30px;
 }
 
-.card{
+.card {
     margin: 10px;
     border: 0px;
     border-radius: 30px;
     background-color: var(--cor-secundario);
 }
 
-.card h5{
+.card h5 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     color: var(--cor-primaria);
     font-size: 25px;
-    
 }
 
-.card p{
-    font-family: 'Montserrat', sans-serif; 
+.card p {
+    font-family: 'Montserrat', sans-serif;
     color: var(--cor-primaria);
     font-weight: 600;
     text-align: center;
 }
 
-.card img{
-    padding: 20px;
-}
-
-.titulo-cards h2{
+.titulo-cards h2 {
     font-family: 'Chewy';
     font-size: 60px;
     text-align: center;
     color: var(--cor-secundario);
 }
 
-h2{
+.card img{
+    padding: 20px;
+}
+
+h2 {
     font-family: "Chewy";
     padding: 60px;
     color: var(--cor-primaria);
     font-size: 60px;
 }
 
-.cards-sec{
+.cards-sec {
     background-color: var(--cor-primaria);
     text-align: center;
-    
-    
 }
 
 button {
@@ -145,10 +128,9 @@ button {
     color: var(--cor-secundario);
 }
 
-.formulario{
-   text-align: center;
+.formulario {
+    text-align: center;
 }
-
 
 .form-col {
     display: flex;
@@ -177,7 +159,7 @@ button {
     box-sizing: border-box;
 }
 
-.formulario button{
+.formulario button {
     background-color: var(--cor-primaria);
     color: var(--cor-secundario);
     border: 0px;
@@ -186,17 +168,16 @@ button {
     height: 70px;
     font-size: 18px;
     margin-top: 30px;
-    
 }
 
-footer{
+footer {
     background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
 
-footer h3{
+footer h3 {
     font-family: 'Chewy';
     color: #EC6246;
     font-size: 30px;
@@ -204,33 +185,32 @@ footer h3{
     margin: 0;
 }
 
-footer p{
+footer p {
     font-family: 'Montserrat';
     font-size: 18px;
     padding: 20px;
     font-weight: 500;
 }
 
-.footer-col1{
+.footer-col1 {
     width: 50%;
 }
 
-.footer-social{
+.footer-social {
     display: flex;
     margin-left: auto;
 }
 
-.footer-social img{
+.footer-social img {
     width: 50px;
     margin-left: 10px;
 }
 
-.footer-social a{
+.footer-social a {
     gap: 25px;
 }
 
-svg{
+svg {
     background-color: #EC6246;
     margin-top: -20px;
-
 }
