@@ -191,7 +191,6 @@ button {
 
 footer{
     background-color: var(--cor-primaria);
-    margin-top: -60px;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
