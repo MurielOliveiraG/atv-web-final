@@ -8,17 +8,25 @@ function addLanche(){
 
     var requisicao = {
       method: 'POST',
-      'Content-Type': 'application/json',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(lanche),
       redirect: 'follow'
     };
-    
+   
     fetch("http://localhost:8080/api/lanche", requisicao)
-      .then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error));
-      alert("Cadastrado com sucesso!")
-      return false;
+    .then(resposta => resposta.text())
+    .then(resultado => {
+        console.log(resultado);
+        alert("Cadastrado com sucesso!");
+    })
+    .catch(erro => {
+        console.log('erro', erro);
+        alert("Erro ao cadastrar.");
+    });
+
+return false;
 }
 
 function getLanche() {
@@ -30,7 +38,7 @@ function getLanche() {
     };
 
     fetch("http://localhost:8080/api/lanches", requisicao)
-        .then(response => response.json())
+        .then(resposta => resposta.json())
         .then(data => {
             const container = document.getElementById('lanches');
             container.innerHTML = '';
@@ -41,13 +49,13 @@ function getLanche() {
 
                 card.innerHTML = `
                     <h3>${item.nome}</h3>
-                    <p>${item.valor}</p>
+                    <p>R$ ${item.valor}</p>
                     <button onclick="deleteLanche(${item.id})">Delete</button>`;
 
                 container.appendChild(card);
             });
         })
-        .catch(error => console.log('error', error));
+        .catch(erro => console.log('erro', erro));
 }
 
 function deleteLanche(itemId) {
@@ -60,13 +68,13 @@ function deleteLanche(itemId) {
     };
 
     fetch(`http://localhost:8080/api/lanche`, requisicao)
-        .then(response => {
-            if (response.ok) {
+        .then(resposta => {
+            if (resposta.ok) {
                 getLanche();
             } else {
                 console.log('Delete request failed.');
             }
         })
-        .catch(error => console.log('error', error));
+        .catch(erro => console.log('erro', erro));
         alert("Deletado com sucesso!")
 }

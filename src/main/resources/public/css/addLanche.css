@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --cor-primaria: #F8CAC1;
+    --cor-secundario: #EC6246;
+}
+
+body {
+    background: radial-gradient(circle, rgba(248,202,193,1) 0%, rgba(236,98,70,1) 100%);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-formulario{
+    position: relative;
+    top: 2rem;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F8CAC1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.conteiner-formulario h1{
+    font-family: "Chewy";
+    color: #EC6246;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.conteiner-formulario p {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #EC6246;
+    text-align: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.conteiner-formulario a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.conteiner-formulario a button {
+    background-color:#EC6246;
+    color:#F8CAC1;
+    border: 0px;
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+.conteiner-formulario form input[type="submit"] {
+    background-color:#EC6246;
+    color:#F8CAC1;
+    border: 0px;
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #EC6246;
+    gap: 1rem;
+}
+
+form label{
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+}
+
+form input{
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color:#EC6246;
+    align-items: center;
+    border: 0px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}

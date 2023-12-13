@@ -74,7 +74,7 @@ section {
     background-color: var(--cor-secundario);
 }
 
-.card h5 {
+.card h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -109,8 +109,10 @@ h2 {
 }
 
 .cards-sec {
-    background-color: var(--cor-primaria);
+    background: rgb(248,202,193);
+    background: linear-gradient(180deg, rgba(248,202,193,1) 0%, rgba(255,175,159,1) 50%, rgba(236,98,70,1) 100%);
     text-align: center;
+    padding-bottom: 20rem;
 }
 
 button {
@@ -126,6 +128,32 @@ button {
 .secao-cards button:hover {
     background-color: var(--cor-primaria);
     color: var(--cor-secundario);
+}
+
+#lanches{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;  
+    gap: 20px;
+}
+#lanches .card{
+    width:33.33%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    height: 14rem;
+}
+
+#lanches .card button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    background-color: #F8CAC1;
+    color: #EC6246;
+    margin: 0;
 }
 
 .formulario {
