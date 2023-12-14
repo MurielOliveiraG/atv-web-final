@@ -17,6 +17,7 @@
     </style>
     <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mediaQueries.css">
     <title>Bite Blitz</title>
 </head>
 
@@ -122,11 +123,12 @@
         </div>
 
         <div id="lanches"></div>
-        <a href="/src/main/resources/public/html/addLanche.html">
-            <button>CADASTRE UM NOVO LANCHE</button>
-        </a>
-        <button onclick="getLanche();">CONHEÇA NOSSO CARDÁPIO</button>
-
+        <div class="botoes">
+            <a href="/src/main/resources/public/html/addLanche.html">
+                <button>CADASTRE UM NOVO LANCHE</button>
+            </a>
+            <button onclick="getLanche();">CONHEÇA NOSSO CARDÁPIO</button>
+        </div>
     </section>
 
     <section class="formulario" id="contato">

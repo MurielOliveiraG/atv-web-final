@@ -39,6 +39,7 @@ section {
     font-weight: bold;
     color: #EC6246;
     text-align: center;
+    padding: 2rem;
 }
 
 .texto{
@@ -60,11 +61,11 @@ section {
     background-color:#EC6246;
     color:#F8CAC1;
     border: 0px;
-    border-radius: 30px;
-    width: 200px;
-    height: 70px;
-    font-size: 18px;
-    margin-top: 30px;
+    border-radius: 1.8rem;
+    width: 12.5rem;
+    height: 4.3rem;
+    font-size: 1.12rem;
+    margin-top: 1.8rem;
 }
 
 
@@ -72,11 +73,11 @@ section {
     background-color:#EC6246;
     color:#F8CAC1;
     border: 0px;
-    border-radius: 30px;
-    width: 200px;
-    height: 70px;
-    font-size: 18px;
-    margin-top: 30px;
+    border-radius: 1.8rem;
+    width: 12.5rem;
+    height: 4.3rem;
+    font-size: 1.12rem;
+    margin-top: 1.8rem;
 }
 form{
     display: flex;
@@ -100,6 +101,6 @@ form input{
     background-color:#EC6246;
     align-items: center;
     border: 0px;
-    border-radius: 30px;
+    border-radius: 1.8rem;
     box-sizing: border-box;
 }

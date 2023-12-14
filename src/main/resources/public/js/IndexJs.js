@@ -72,7 +72,7 @@ function deleteLanche(itemId) {
             if (resposta.ok) {
                 getLanche();
             } else {
-                console.log('Delete request failed.');
+                console.log('Erro ao deletar.');
             }
         })
         .catch(erro => console.log('erro', erro));

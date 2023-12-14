@@ -1,0 +1,69 @@
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .header-logo {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .header-nav{
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .secao-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #lanches{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-col1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-col1 p{
+        text-align: justify;
+    }
+
+    .footer-social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+  }
+   
+}
